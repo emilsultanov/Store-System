@@ -1,126 +1,123 @@
 {
-	"products": [
-		{
-			"id": 0,
-			"name": "iPhone 11",
-			"price": 917,
-			"count": 5,
-			"category_id": 1
-		},
-		{
-			"id": 1,
-			"name": "iPhone 11 Pro",
-			"price": 1155,
-			"count": 3,
-			"category_id": 1
-		},
-		{
-			"id": 2,
-			"name": "Samsung Galaxy Note 10",
-			"price": 679,
-			"count": 2,
-			"category_id": 1
-		},
-		{
-			"id": 3,
-			"name": "Samsung Galaxy S10",
-			"price": 350,
-			"count": 6,
-			"category_id": 1
-		},
-		{
-			"id": 4,
-			"name": "Samsung Galaxy Note 9",
-			"price": 420,
-			"count": 8,
-			"category_id": 1
-		},
-		{
-			"id": 5,
-			"name": "Xiaomi redmi 7",
-			"price": 159,
-			"count": 4,
-			"category_id": 1
-		},
-		{
-			"id": 6,
-			"name": "Xiaomi MI 9",
-			"price": 300,
-			"count": 5,
-			"category_id": 1
-		},
-
-		{
-			"id": 7,
-			"name": "Apple Airpods Pro",
-			"price": 173,
-			"count": 7,
-			"category_id": 2
-		},
-		{
-			"id": 8,
-			"name": "Apple Airpods",
-			"price": 123,
-			"count": 5,
-			"category_id": 2
-		},
-		{
-			"id": 9,
-			"name": "Apple Watch Series 5",
-			"price": 335,
-			"count": 6,
-			"category_id": 2
-		},
-
-		{
-			"id": 10,
-			"name": "MacBook Air",
-			"price": 695,
-			"count": 2,
-			"category_id": 3
-		},
-		{
-			"id": 11,
-			"name": "Mac Mini",
-			"price": 1443,
-			"count": 4,
-			"category_id": 3
-		},
-		{
-			"id": 12,
-			"name": "MacBook Pro",
-			"price": 2500,
-			"count": 1,
-			"category_id": 3
-		},
-		{
-			"id": 13,
-			"name": "Dell",
-			"price": 1800,
-			"count": 4,
-			"category_id": 3
-		},
-		{
-			"id": 14,
-			"name": "Hp g5",
-			"price": 1443,
-			"count": 0,
-			"category_id": 3
-		}
-	],
-
-	"categories": [
-		{
-			"name": "Phone",
-			"id": 1
-		},
-		{
-			"name": "Accessory",
-			"id": 2
-		},
-		{
-			"name": "Laptop",
-			"id": 3
-		}
-	]
+  "products": [
+    {
+      "id": 0,
+      "name": "iPhone 11",
+      "price": 917,
+      "count": 0,
+      "category_id": 1
+    },
+    {
+      "id": 1,
+      "name": "iPhone 11 Pro",
+      "price": 1155,
+      "count": 1,
+      "category_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy Note 10",
+      "price": 679,
+      "count": 1,
+      "category_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Samsung Galaxy S10",
+      "price": 350,
+      "count": 6,
+      "category_id": 1
+    },
+    {
+      "id": 4,
+      "name": "Samsung Galaxy Note 9",
+      "price": 420,
+      "count": 8,
+      "category_id": 1
+    },
+    {
+      "id": 5,
+      "name": "Xiaomi redmi 7",
+      "price": 159,
+      "count": 4,
+      "category_id": 1
+    },
+    {
+      "id": 6,
+      "name": "Xiaomi MI 9",
+      "price": 300,
+      "count": 5,
+      "category_id": 1
+    },
+    {
+      "id": 7,
+      "name": "Apple Airpods Pro",
+      "price": 173,
+      "count": 7,
+      "category_id": 2
+    },
+    {
+      "id": 8,
+      "name": "Apple Airpods",
+      "price": 123,
+      "count": 5,
+      "category_id": 2
+    },
+    {
+      "id": 9,
+      "name": "Apple Watch Series 5",
+      "price": 335,
+      "count": 6,
+      "category_id": 2
+    },
+    {
+      "id": 10,
+      "name": "MacBook Air",
+      "price": 695,
+      "count": 2,
+      "category_id": 3
+    },
+    {
+      "id": 11,
+      "name": "Mac Mini",
+      "price": 1443,
+      "count": 4,
+      "category_id": 3
+    },
+    {
+      "id": 12,
+      "name": "MacBook Pro",
+      "price": 2500,
+      "count": 1,
+      "category_id": 3
+    },
+    {
+      "id": 13,
+      "name": "Dell",
+      "price": 1800,
+      "count": 4,
+      "category_id": 3
+    },
+    {
+      "id": 14,
+      "name": "Hp g5",
+      "price": 1443,
+      "count": 0,
+      "category_id": 3
+    }
+  ],
+  "categories": [
+    {
+      "name": "Phone",
+      "id": 1
+    },
+    {
+      "name": "Accessory",
+      "id": 2
+    },
+    {
+      "name": "Laptop",
+      "id": 3
+    }
+  ]
 }

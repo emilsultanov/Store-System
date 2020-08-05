@@ -1,5 +1,11 @@
 import * as actionTypes from "./actionTypes";
 
+export const reset_cart_products = () => {
+	return {
+		type: actionTypes.RESET_CART_PRODUCTS,
+	};
+};
+
 export const select_product = (product_id, product_price) => {
 	return (dispatch, getState) => {
 		const state = getState();

@@ -95,6 +95,14 @@ const cartReducer = (state = initial_state, action) => {
 			};
 		}
 
+		case actionTypes.RESET_CART_PRODUCTS: {
+			return {
+				cartProducts: [],
+				totalPriceOfProducts: 0,
+				totalQuantityOfProducts: 0,
+			};
+		}
+
 		default:
 			return state;
 	}

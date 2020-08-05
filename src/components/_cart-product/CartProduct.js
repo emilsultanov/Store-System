@@ -5,6 +5,7 @@ import {
 	remove_product,
 	change_order_count,
 } from "../../store/_actions/cartActions";
+// import { update_stock_product } from "../../store/_actions/stockActions";
 
 function CartProduct({ name, price, id, count }) {
 	const dispatch = useDispatch();

@@ -1,6 +1,7 @@
 import React, { useEffect, useCallback, memo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { get_products } from "../../store/_actions/productsActions";
+import { get_initial_stock } from "../../store/_actions/stockActions";
 import { Container, Row, Col } from "react-bootstrap";
 import ProductCategories from "../../components/_product-categories/ProductCategories";
 import Product from "../../components/_product/Product";
@@ -11,6 +12,7 @@ function Products() {
 
 	const getProducts = useCallback(() => {
 		dispatch(get_products(0));
+		dispatch(get_initial_stock());
 	}, [dispatch]);
 
 	useEffect(() => {

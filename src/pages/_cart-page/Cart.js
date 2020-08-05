@@ -1,14 +1,36 @@
 import React, { memo } from "react";
 import { Container, Row, Col, ListGroup, Button } from "react-bootstrap";
 import CartProduct from "../../components/_cart-product/CartProduct";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { update_stock } from "../../store/_actions/stockActions";
+import { get_products } from "../../store/_actions/productsActions";
+import { reset_cart_products } from "../../store/_actions/cartActions";
+import { useHistory } from "react-router-dom";
 
 function Cart() {
-	const cart = useSelector((state) => state.cart);
+	const history = useHistory();
+	const dispatch = useDispatch();
+	const { cart } = useSelector((state) => state);
 	const { cartProducts, totalPriceOfProducts, totalQuantityOfProducts } = cart;
 
 	const handleOrderClick = (event) => {
-		console.log(event);
+		const filteredCartProducts = cartProducts.map((product) => {
+			return {
+				id: product.id,
+				name: product.name,
+				price: product.price,
+				count: product.count - product.order_count,
+				category_id: product.category_id,
+			};
+		});
+
+		filteredCartProducts.forEach((product) => {
+			dispatch(update_stock(product));
+		});
+
+		dispatch(get_products(0));
+		dispatch(reset_cart_products());
+		history.push("/products");
 	};
 
 	return (
